@@ -1,0 +1,35 @@
+{% extends "main.html" %} {% block content %} {% include "header.html" %}
+<!--list categories-->
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>{{category.name}}</h2>
+        </div>
+        <div class="col-md-6 text-right">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            <a href="{{url_for('add_item', category=category.name)}}">Add Item</a>
+        </div>
+    </div>
+    <br>
+    <div id="display-items">
+        {% for item in items %}
+        <ul>
+            <li>
+                <a href="{{url_for('specific_item', category=item.category.name, item=item.name)}}">
+                                {{item.name}}
+                                </a>
+            </li>
+        </ul>
+        <br> {% endfor %}
+    </div>
+
+</div>
+<br>
+<div>
+</div>
+<script>
+    $("#create-category, #logout-dropdown, .edit-icon, .delete-icon").css({
+        "display": "none"
+    });
+</script>
+{% endblock %}

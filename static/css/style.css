@@ -1,0 +1,80 @@
+.navbar {
+    background: lightblue;
+}
+
+.navbar ul li a {
+    color: black !important;
+}
+
+.navbar .navbar-brand #item-logo {
+    color: red;
+    font-size: 30px;
+}
+
+.navbar .navbar-brand #catalog-logo {
+    color: darkblue;
+    font-size: 30px;
+}
+
+.main {
+    height: 170px;
+}
+
+.category-dropdown {
+    margin-left: 15%;
+}
+
+.category-dropdown .dropdown .btn {
+    margin-top: 10%;
+}
+
+.category-dropdown .dropdown .btn,
+.category-dropdown ul.dropdown-menu {
+    width: 80%;
+}
+
+.category-dropdown .dropdown .btn .caret {
+    float: right;
+    margin-top: 5px;
+}
+
+#display-items {
+    margin-top: 50px;
+}
+
+#display-items ul {
+    list-style-type: none;
+    padding: 0;
+    /*display: block;*/
+}
+
+#display-items li {
+    list-style: none;
+}
+
+#display-items ul li {
+    display: inline;
+    font-size: 20px;
+}
+
+#display-items ul li a {
+    color: darkblue;
+    padding-right: 5px;
+}
+
+.edit-icon {
+    color: dodgerblue !important;
+}
+
+.delete-icon {
+    color: red !important;
+}
+
+#display-categories ul li {
+    display: -webkit-inline-flex;
+    font-size: 15px;
+}
+
+#signinButton {
+    margin: auto;
+}
